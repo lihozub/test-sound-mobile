@@ -1,14 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Child1 } from "./Child1";
+import { Child2 } from "./Child2";
 import './App.css';
 
 const App = () => {
-  const [isSound, setIsSound] = React.useState<boolean>(false);
-
-  setTimeout(() => {
-    setIsSound(!isSound);
-    console.log(isSound)
-  }, 3000);
   return (
     <div className="App">
       <header className="App-header">
@@ -16,15 +12,8 @@ const App = () => {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <button onClick={() => setIsSound(!isSound)}>Toggle sound</button>
-        {isSound &&
-          <>
-            <h1>Play</h1>
-            <audio autoPlay>
-              <source src="https://api.coderrocketfuel.com/assets/pomodoro-times-up.mp3" />
-            </audio>
-          </>
-        }
+        <Child1 />
+        <Child2 />
         <a
           className="App-link"
           href="https://reactjs.org"
