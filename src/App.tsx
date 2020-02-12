@@ -4,6 +4,11 @@ import './App.css';
 
 const App = () => {
   const [isSound, setIsSound] = React.useState<boolean>(false);
+
+  setTimeout(() => {
+    setIsSound(!isSound);
+    console.log(isSound)
+  }, 3000);
   return (
     <div className="App">
       <header className="App-header">
