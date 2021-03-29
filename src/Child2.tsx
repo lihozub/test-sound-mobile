@@ -20,8 +20,9 @@ export const Child2 = () => {
               {isComp &&
               <>
                   <h1>Play Comp</h1>
-                  <audio autoPlay>
-                      <source src="https://api.coderrocketfuel.com/assets/pomodoro-times-up.mp3" />
+                  <audio autoPlay preload="auto">
+                      {/*<source src="https://api.coderrocketfuel.com/assets/pomodoro-times-up.mp3" />*/}
+                      <source src="./001.mp3" />
                   </audio>
               </>
               }

@@ -6,7 +6,7 @@ export const Child1 = () => {
 
   setTimeout(() => {
     setIsSound(!isSound);
-    
+
   }, 3000);
   return (
     <div>
